@@ -6,13 +6,16 @@ import { MyApp } from './app.component';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import { MyTeamsPage, TournamentsPage } from '../pages/index';
+import { MyTeamsPage, TournamentsPage, TeamsPage, TeamDetailPage, GamePage } from '../pages/index';
 
 @NgModule({
   declarations: [
     MyApp,
     MyTeamsPage,
-    TournamentsPage
+    TournamentsPage,
+    TeamsPage, 
+    TeamDetailPage, 
+    GamePage
   ],
   imports: [
     BrowserModule,
@@ -22,7 +25,10 @@ import { MyTeamsPage, TournamentsPage } from '../pages/index';
   entryComponents: [
     MyApp,
     MyTeamsPage,
-    TournamentsPage
+    TournamentsPage,
+    TeamsPage, 
+    TeamDetailPage, 
+    GamePage
   ],
   providers: [
     StatusBar,

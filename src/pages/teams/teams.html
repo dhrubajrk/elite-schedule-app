@@ -15,7 +15,6 @@
 
 <ion-content padding>
   <ion-list>
-    <button (click)="gotoTeamPage()" ion-item> Mumbai Indians</button>
-    <button (click)="gotoTeamPage()" ion-item> Chennai Super Kings </button>
+    <button *ngFor="let team of teams" (click)="gotoTeamPage($event,team)" ion-item> {{team.name}} </button>
   </ion-list>
 </ion-content>

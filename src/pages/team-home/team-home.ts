@@ -19,4 +19,8 @@ export class TeamHomePage {
     console.log('ionViewDidLoad TeamHomePage');
   }
 
+  returnToHome() {
+    this.navCtrl.popToRoot();
+  }
+
 }
